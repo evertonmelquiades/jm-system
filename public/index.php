@@ -1,15 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 define('LARAVEL_START', microtime(true));
-
-if(DB::connection()->getDatabaseName())
-{
-   echo "Connected to database ".DB::connection()->getDatabaseName();
-}
-$response->send();
 
 // Determine if the application is in maintenance mode...
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
