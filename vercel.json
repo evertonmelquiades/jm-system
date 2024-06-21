@@ -25,6 +25,10 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-        "NODE_PATH": "node" 
+        "NODE_PATH": "node"
+    },
+    "scripts": {
+        "build": "vercel build",
+        "prod": "vite"
     }
 }
