@@ -48,7 +48,7 @@
             "@php artisan migrate --graceful --ansi"
         ],
         "vercel": [
-            "npm install && npm run prod"
+            "npm install && npm run dev"
         ]
     },
     "extra": {
