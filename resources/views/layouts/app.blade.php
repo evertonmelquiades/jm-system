@@ -19,15 +19,21 @@
 </head>
 
 <body class="min-h-screen bg-gray-100 font-sans antialiased">
-    
+
+    <nav class="bg-white shadow w-full">
         @include('layouts.navigation')
+    </nav>
 
-        <main class="flex-grow">
-            @yield('content')
-        </main>
+    <main class="flex-grow">
+        @yield('content')
+    </main>
 
-        @include('layouts.footer')
-    
+    <footer class="bg-base-300 fixed bottom-0 w-full text-base-content p-4">
+        <aside class="text-center">
+            <p>Copyright © 2024 - All right reserved by JM Automation</p>
+        </aside>
+    </footer>
+
 </body>
 
 </html>
