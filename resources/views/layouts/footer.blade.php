@@ -1,4 +1,4 @@
-<footer class="bg-base-300 fixed text-base-content p-4">
+<footer class="bg-base-300 fixed w-full text-base-content p-4">
     <aside class="text-center">
         <p>Copyright © 2024 - All right reserved by JM Automation</p>
     </aside>
