@@ -18,16 +18,16 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
+<body class="min-h-screen bg-gray-100 font-sans antialiased">
+    
         @include('layouts.navigation')
 
-        <main>
+        <main class="flex-grow">
             @yield('content')
         </main>
 
         @include('layouts.footer')
-    </div>
+    
 </body>
 
 </html>
