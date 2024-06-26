@@ -5,10 +5,8 @@
         "api/index.php": { "runtime": "vercel-php@0.6.1" }
     },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "env": {
         "APP_ENV": "production",
@@ -25,6 +23,6 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-        "NODE_PATH": "node" 
+        "NODE_PATH": "node"
     }
 }
